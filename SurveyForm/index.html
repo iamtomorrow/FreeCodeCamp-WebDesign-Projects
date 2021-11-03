@@ -1,0 +1,198 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <main id="main">
+            <div id="header__container">
+                <h1 id="title">Survey Form</h1>
+                <p id="description">This is a survey webform to help us improve our systems.</p>
+            </div>
+
+            <form action="" id="survey-form">
+              <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input
+                       type="text"
+                       name="name"
+                       id="name"
+                       placeholder="Enter your name"
+                       required
+                       >
+              </div>
+              
+              <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input
+                       type="email"
+                       name="email"
+                       id="email"
+                       placeholder="Enter your email"
+                       required
+                       >
+              </div>
+              
+              <div class="form-group">
+                <label for="age" id="number-label">Age</label>
+                <input
+                       type="number"
+                       name="age"
+                       id="number"
+                       placeholder="Enter your age"
+                       required
+                       min="18"
+                       max="100"
+                       >
+              </div>
+              
+              <div class="form-group">
+                <p>What is your Operating System</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                  <option disable selected value>Current OS</option>
+                  <option>Windwos 10</option>
+                  <option>Windows 11</option>
+                  <option>MacOS</option>
+                  <option>Ubuntu</option>
+                </select>
+              
+              </div>
+              
+              <div class="form-group" id="user-evaluation">
+                <p>How do you evaluate your current OS?</p>
+                <div id="user-evaluation-grid">
+                  <div id="grid-item">
+                    <label>Very good</label>
+                    <input
+                           name="user-evaluation"
+                           type="radio" 
+                           value="very good"
+                           class="input-radio"
+                           checked/>
+                  </div>
+                  
+                <div id="grid-item">
+                <label>Good</label>
+                  <input
+                         name="user-evaluation"
+                         type="radio" 
+                         value="good"
+                         class="input-radio"
+                         checked/>
+                  </div>
+                
+                <div id="grid-item">
+                  <label>Nice</label> 
+                    <input
+                         name="user-evaluation"
+                         type="radio" 
+                         value="nice"
+                         class="input-radio"
+                         checked/>
+                  </div>
+                
+              <div id="grid-item">
+                <label>I do not complain</label>
+                  <input
+                         name="user-evaluation"
+                         type="radio" 
+                         value="very good"
+                         class="input-radio"
+                         checked/>
+              </div>
+                
+              <div id="grid-item">
+                <label>Bad</label>
+                  <input
+                         name="user-evaluation"
+                         type="radio" 
+                         value="very good"
+                         class="input-radio"
+                         checked/>
+                </label>
+              </div>
+              
+              <div id="grid-item">
+                <label>Really bad</label>
+                  <input
+                         name="user-evaluation"
+                         type="radio" 
+                         value="very good"
+                         class="input-radio"
+                         checked/>
+          </div>
+                </div>
+              </div>
+          
+          <div class="form-group"> 
+            <p>What would you like to improve on your OS?
+              <span>(Check all that apply)</span>
+            </p>
+            <div class="checkbox__container"> 
+              <div>
+                <label>
+                <input 
+                     name="prefer"
+                     value="RAM"
+                     type="checkbox"
+                     class="input-checkbox"
+                     />RAM</label>
+              </div>
+              
+              <label>
+              <input 
+                     name="prefer"
+                     value="Processor"
+                     type="checkbox"
+                     class="input-checkbox"
+                     />Processor</label>
+              <label>
+              <input 
+                     name="prefer"
+                     value="System Architecture"
+                     type="checkbox"
+                     class="input-checkbox"
+                     />System Architecture</label>
+              <label>
+              <input 
+                     name="prefer"
+                     value="System Version"
+                     type="checkbox"
+                     class="input-checkbox"
+                     />System Version</label>
+              <label>
+              <input 
+                     name="prefer"
+                     value="Support"
+                     type="checkbox"
+                     class="input-checkbox"
+                     />Support</label>
+              
+              <label>
+              <input 
+                     name="prefer"
+                     value="My computer is that good"
+                     type="checkbox"
+                     class="input-checkbox"
+                     />My computer is that good</label>
+            </div>
+          </div>
+          
+          <div id="comments__container">
+            <p>Please, submit some comments or suggestions!
+            <textarea id="comments"
+                    class="textarea"
+                    name="comments"
+                    placeholder="Additional comments are welcome...">
+            </textarea>
+          </div>
+          
+          <div id="submit-button__container">
+            <button id="submit">Submit</button>
+          </div>
+
+        </main>
+  </body>
